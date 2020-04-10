@@ -1,0 +1,372 @@
+/* Variables */
+
+:root {
+
+  /* Colors */
+  --primary-label: #2a2c30;
+  --secondary-label: #747678;
+
+  /* Font Stacks */
+  --primary-font-stack:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --secondary-font-stack: Times, "Times New Roman", serif;
+
+  /* Font Weights */
+  --primary-font-weight: 600;
+  --secondary-font-weight: 500;
+  --tertiary-font-weight: 300;
+
+  /* Sizing and Spacing (Base 10px) */
+  --sizing-6-rem: 6rem;
+  --sizing-5-point-5-rem: 5.5rem;
+  --sizing-5-rem: 5rem;
+  --sizing-4-point-5-rem: 4.5rem;
+  --sizing-4-rem: 4rem;
+  --sizing-3-point-5-rem: 3.5rem;
+  --sizing-3-rem: 3rem;
+  --sizing-2-point-5-rem: 2.5rem;
+  --sizing-2-rem: 2rem;
+  --sizing-1-point-5-rem: 1.5rem;
+  --sizing-1-rem: 1rem;
+  --sizing-0-point-5-rem: .5rem;
+  --sizing-0-rem: 0rem;
+
+}
+
+
+/* Default Values */
+
+html {
+  /* 1 rem = 10px; 10px/16px = 62.5% */
+  font-size: 62.5%;
+}
+
+* {
+  color: var(--primary-label);
+  font-family: var(--primary-font-stack);
+  font-weight: var(--primary-font-weight);
+  margin: var(--sizing-0-rem);
+  padding: var(--sizing-0-rem);
+}
+
+
+/* Global Elements */
+
+h1 {
+  font-size: var(--sizing-3-point-5-rem);
+  line-height: var(--sizing-4-point-5-rem);
+}
+
+h2 {
+  font-size: var(--sizing-3-rem);
+  line-height: var(--sizing-4-rem);
+  margin-top: var(--sizing-4-point-5-rem);
+  margin-bottom: var(--sizing-2-rem);
+}
+
+h3 {
+  font-size: var(--sizing-2-rem);
+  line-height: var(--sizing-3-point-5-rem);
+  margin-top: var(--sizing-3-rem);
+  margin-bottom: var(--sizing-2-rem);
+}
+
+p {
+  font-size: var(--sizing-2-rem);
+  font-weight: var(--tertiary-font-weight);
+  line-height: var(--sizing-3-point-5-rem);
+  margin-bottom: var(--sizing-2-rem);
+}
+
+a:hover {
+  color: var(--secondary-label);
+  transition: 0.3s;
+}
+
+ol {
+  margin-left: var(--sizing-5-rem);
+  margin-bottom: var(--sizing-2-rem);
+}
+
+li {
+  font-size: var(--sizing-2-rem);
+  font-weight: var(--tertiary-font-weight);
+  line-height: var(--sizing-3-point-5-rem);
+  margin-bottom: var(--sizing-1-rem);
+}
+
+
+/* Additional Fonts */
+
+.accentLabel {
+  color: var(--secondary-label);
+  font-family: var(--primary-font-stack);
+  font-size: var(--sizing-1-point-5-rem);
+  font-weight: var(--tertiary-font-weight);
+  line-height: var(--sizing-2-rem);
+  margin-bottom: var(--sizing-0-rem);
+}
+
+
+/* Site Navigation Elements */
+
+.siteNavigation {
+  height: var(--sizing-3-point-5-rem);
+  margin-top: var(--sizing-2-rem);
+  margin-bottom: var(--sizing-4-rem);
+}
+
+.siteLogo a {
+  float: left;
+  font-size: var(--sizing-3-point-5-rem);
+  line-height: var(--sizing-3-point-5-rem);
+  text-decoration: none;
+}
+
+.siteLogo a:hover {
+  color: var(--secondary-label);
+  transition: 0.3s;
+}
+
+.jobTitle {
+  display: none;
+}
+
+.jobTitle p {
+  color: var(--secondary-label);
+  float: left;
+  font-size: var(--sizing-2-rem);
+  font-weight: var(--secondary-font-weight);
+  line-height: var(--sizing-2-rem);
+  margin-left: var(--sizing-1-point-5-rem);
+}
+
+.navigationItemContainer {
+  float: right;
+}
+
+.navigationItem {
+  display: inline-block;
+  position: relative;
+  top: var(--sizing-1-point-5-rem);
+  margin-left: var(--sizing-1-point-5-rem);
+}
+
+.navigationItem a {
+  font-size: var(--sizing-1-point-5-rem);
+  font-weight: var(--secondary-font-weight);
+  line-height: var(--sizing-1-point-5-rem);
+}
+
+
+/* Homepage Elements */
+
+.caseStudyListingComponent {
+  margin-bottom: var(--sizing-6-rem);
+}
+
+.caseStudyListingTitle h3 {
+  margin-top: var(--sizing-0-rem);
+  margin-bottom: var(--sizing-0-rem);
+}
+
+
+/* Case Study Header Elements */
+
+.caseStudyHeader {
+  margin-bottom: var(--sizing-4-rem);
+}
+
+.caseStudyQuickFacts {
+  margin-bottom: var(--sizing-0-point-5-rem);
+}
+
+.quickFactComponent {
+  display: inline-block;
+  margin-right: var(--sizing-0-point-5-rem);
+}
+
+.quickFactComponent p {
+  font-weight: var(--secondary-font-weight);
+}
+
+.smallLabel {
+  color: var(--secondary-label);
+  font-size: var(--sizing-1-rem);
+  line-height: var(--sizing-1-rem);
+  text-transform: uppercase;
+  margin-bottom: var(--sizing-0-rem);
+}
+
+
+/* In 60 Seconds Video Player Elements */
+
+.inSixtySecondsVideo {
+
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.inSixtySecondsVideo video {
+  width: 100%;
+}
+
+
+/* Table */
+
+.atAGlanceTable {
+  display: block;
+}
+
+.atAGlanceColumn1 {
+  display: block;
+}
+
+.atAGlanceColumn1 p {
+  display: block;
+  font-weight: var(--primary-font-weight);
+  margin-bottom: var(--sizing-0-rem);
+}
+
+.atAGlanceColumn2 {
+  display: block;
+}
+
+.atAGlanceColumn2Final p {
+  margin-bottom: var(--sizing-0-rem);
+}
+
+
+/* Media Queries */
+
+.pageLayout {
+  padding-left: var(--sizing-1-point-5-rem);
+  padding-right: var(--sizing-1-point-5-rem);
+}
+
+@media (min-width:768px) {
+  .siteNavigation {
+    height: var(--sizing-5-point-5-rem);
+    margin-top: var(--sizing-4-rem);
+  }
+
+  .siteLogo {
+    position: relative;
+    top: var(--sizing-0-point-5-rem);
+  }
+
+  .siteLogo a {
+    font-size: var(--sizing-4-point-5-rem);
+    line-height: var(--sizing-4-point-5-rem);
+  }
+
+  .jobTitle {
+    display: block;
+    position: relative;
+    top: var(--sizing-2-point-5-rem);
+  }
+
+  .jobTitle p {
+    font-size: var(--sizing-2-rem);
+    line-height: var(--sizing-2-rem);
+    padding-bottom: var(--sizing-0-rem);
+  }
+
+  .navigationItem {
+    margin-left: var(--sizing-2-rem);
+    top: var(--sizing-2-point-5-rem);
+  }
+
+  .navigationItem a {
+    font-size: var(--sizing-2-rem);
+    line-height: var(--sizing-2-rem);
+  }
+
+  .pageContent {
+    margin-top: var(--sizing-6-rem);
+  }
+
+  .caseStudyHeader {
+    margin-bottom: var(--sizing-6-rem);
+  }
+
+  .caseStudyName h1 {
+    font-size: var(--sizing-4-point-5-rem);
+    line-height: var(--sizing-5-point-5-rem);
+  }
+
+  .atAGlanceTable {
+    display: table;
+    width: 100%;
+  }
+
+  .atAGlanceColumn1 {
+    display: table-cell;
+    width: 25%;
+  }
+
+  .atAGlanceColumn2 {
+    display: table-cell;
+    width: 75%;
+  }
+
+  .inSixtySecondsVideo video {
+    width: 700px;
+    height: 394px;
+  }
+
+  .pageLayout {
+    margin: var(--sizing-0-rem) auto;
+    padding: var(--sizing-0-rem);
+    max-width: 700px;
+  }
+}
