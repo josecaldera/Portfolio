@@ -285,6 +285,50 @@ li {
   margin-bottom: var(--sizing-0-rem);
 }
 
+/* Images and Lightbox */
+
+.thumbnail {
+  max-width: 40%;
+}
+
+.italic { font-style: italic; }
+.small { font-size: 0.8em; }
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+  overflow: hidden;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+  overflow: hidden;
+	position: fixed;
+}
+
 
 /* Media Queries */
 
@@ -360,13 +404,13 @@ li {
   }
 
   .inSixtySecondsVideo video {
-    width: 700px;
+    width: 650px;
     height: 394px;
   }
 
   .pageLayout {
     margin: var(--sizing-0-rem) auto;
     padding: var(--sizing-0-rem);
-    max-width: 700px;
+    max-width: 650px;
   }
 }
