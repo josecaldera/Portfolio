@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--sizing-2-rem);
+  font-size: var(--sizing-2-point-5-rem);
   line-height: var(--sizing-3-point-5-rem);
   margin-top: var(--sizing-3-rem);
   margin-bottom: var(--sizing-2-rem);
@@ -87,11 +87,22 @@ ol {
   margin-bottom: var(--sizing-2-rem);
 }
 
+ul {
+  margin-left: var(--sizing-5-rem);
+  margin-bottom: var(--sizing-2-rem);
+}
+
 li {
   font-size: var(--sizing-2-rem);
   font-weight: var(--tertiary-font-weight);
   line-height: var(--sizing-3-point-5-rem);
   margin-bottom: var(--sizing-1-rem);
+}
+
+img {
+  width: 100%;
+  margin-top: var(--sizing-1-rem);
+  margin-bottom: var(--sizing-3-rem);
 }
 
 
@@ -329,6 +340,37 @@ li {
 	position: fixed;
 }
 
+/* About and Resume Elements */
+
+.resumeListing {
+  margin-top: var(--sizing-1-rem);
+  margin-bottom: var(--sizing-3-rem);
+}
+
+.resumeListingTitle {
+  color: var(--primary-label);
+  font-size: var(--sizing-2-rem);
+  font-weight: var(--secondary-font-weight);
+  line-height: var(--sizing-3-point-5-rem);
+  margin-left: var(--sizing-3-rem);
+  margin-bottom: var(--sizing-0-rem);
+}
+.resumeListingDetails {
+  color: var(--secondary-label);
+  font-size: var(--sizing-1-point-5-rem);
+  font-weight: var(--tertiary-font-weight);
+  line-height: var(--sizing-2-point-5-rem);
+  margin-left: var(--sizing-3-rem);
+  margin-bottom: var(--sizing-1-rem);
+}
+.resumeListingDescription {
+  color: var(--primary-label);
+  font-size: var(--sizing-1-point-5-rem);
+  font-weight: var(--tertiary-font-weight);
+  line-height: var(--sizing-2-point-5-rem);
+  margin-left: var(--sizing-3-rem);
+  margin-bottom: var(--sizing-0-rem);
+}
 
 /* Media Queries */
 
@@ -404,13 +446,13 @@ li {
   }
 
   .inSixtySecondsVideo video {
-    width: 650px;
-    height: 394px;
+    width: 700px;
+    height: 424px;
   }
 
   .pageLayout {
     margin: var(--sizing-0-rem) auto;
     padding: var(--sizing-0-rem);
-    max-width: 650px;
+    max-width: 700px;
   }
 }

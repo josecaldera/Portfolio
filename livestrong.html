@@ -60,7 +60,7 @@
       <div class="caseStudySection">
         <h2>At a Glance</h2>
         <p>
-          Livestrong.com is a licensee of the Livestrong Organization's brand. We focus on content that helps readers get fit, eat better, manage weight, and overall - live well. As part of this project, our team reimagined what the fitness content web experience could be.
+          Livestrong.com is a licensee of the Livestrong Organization's brand. We focus on content that helps readers get fit, eat better, manage weight, and overall - live well. As part of this particular project, our team reimagined what the fitness content web experience could be.
         </p>
         <div>
           <div class="atAGlanceTable">
@@ -125,41 +125,137 @@
           This case study picks up at the beginning of 2020, when we began the enhancement phase of the Get Fit category - starting with workouts.
         </p>
       </div>
-      <h2>Project Frame</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      </p>
-      <h2>Research</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      </p>
+      <div class="caseStudySection">
+        <h2>Research</h2>
+        <p>
+           Activities included: stakeholder and user interviews, competitor usability and feature analysis, schema and model research, and a look into user search patterns.
+        </p>
+        <p>
+          You can view a redacted findings and recommendations writeup <a href="/documents/Jose_Caldera_Workouts_Research_Brief.pdf" target="_blank" rel="noreferrer noopener">here</a>, but for brevity the key insights are:
+        </p>
+        <div>
+          <div class="atAGlanceTable">
+            <div class="atAGlanceColumn1">
+              <p>
+                Insight 1
+              </p>
+            </div>
+            <div class="atAGlanceColumn2">
+              <p>
+                People of beginner to intermediate fitness proficiency are more likely to search for exercises by body region (arms, chest, legs, etc.) over particular muscles or equipment.
+              </p>
+            </div>
+          </div>
+          <div class="atAGlanceTable">
+            <div class="atAGlanceColumn1">
+              <p>
+                Insight 2
+              </p>
+            </div>
+            <div class="atAGlanceColumn2">
+              <p>
+                People heavily prefer video that is laser focused on providing an efficient visual walkthrough of the movement with voiceover for additional clarification or detail.
+              </p>
+            </div>
+          </div>
+          <div class="atAGlanceTable">
+            <div class="atAGlanceColumn1">
+              <p>
+                Insight 3
+              </p>
+            </div>
+            <div class="atAGlanceColumn2">
+              <p>
+                Our competitors widely categorized their content by body region (in alignment with Insight 1) or by goal (build muscle, lose fat, etc.).
+              </p>
+            </div>
+          </div>
+          <div class="atAGlanceTable">
+            <div class="atAGlanceColumn1">
+              <p>
+                Insight 4
+              </p>
+            </div>
+            <div class="atAGlanceColumn2">
+              <p>
+                Our online competitors largely offered exercise instructions in the form of editorial: a visual asset (video, gif, or image) paired with a paragraph of explanation; while our native app competitors offered complete routines made up of individual exercises that leveraged structured data.
+              </p>
+            </div>
+          </div>
+          <div class="atAGlanceTable">
+            <div class="atAGlanceColumn1">
+              <p>
+                Insight 5
+              </p>
+            </div>
+            <div class="atAGlanceColumn2Final">
+              <p>
+                Schema.org had two schemas that we could leverage <span style="font-style:italic; font-weight:300">PhysicalActivity</span> which mapped to an activity like "weight lifting" and <span style="font-style:italic; font-weight:300">ExercisePlan</span> which mapped to an individual exercise like a dumbbell curl..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="caseStudySection">
+        <h2>Recommendations</h2>
+        <p>
+          I synthesized my findings into a Recommendations section of my write-up. You can read it in detail below, but the jist of it is: roughly model our content organization to the two schemas found on schema.org, create companion front-end and CMS-side modules, along with a recommendation that I'm not at liberty to share.
+        </p>
+        <img src="/images/Jose_Caldera_Redacted_Recommendations_Section.jpg" alt="A screenshot of the recommendations section of the research write-up." />
+        <p>
+          I presented my research and recommendations along with some rough sketches to the higher ups and we agreed to a phased approach.
+        </p>
+      </div>
+      <div class="caseStudySection">
+        <h2>Case Study Midpoint Recap</h2>
+        <p>
+          <strong>Problem: </strong>Livestrong.com needs an improved workout content experience that helps people of beginner-to-intermediate fitness levels learn about the right ways to perform and execute individual exercises and comprehensive routines.
+        </p>
+        <p>
+          <strong>Solution: </strong>Build a structured data driven experience. The project is phased and starts off with our in-article exercise experience.
+        </p>
+        <p>
+          <strong>Important Note: </strong>From this point forward, the wires, research, and interations detailed below were developed in office, as well as, in class as part of my HCI studies. Parts of the work have made their way to production while other parts were created to serve as submissions for finals.
+        </p>
+      </div>
       <h2>Wires</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        The individual exercise module seen below houses:
+        <ul>
+          <li>
+            exercise name
+          </li>
+          <li>
+            visual asset (video or gif)
+          </li>
+          <li>
+            information on sets, repetitions, rest period, or any applicable data
+          </li>
+          <li>
+            supplementary instructions in an expandable container
+          </li>
+        </ul>
       </p>
-      <h2>Test + Iteration</h2>
+      <img src="/images/Jose_Caldera_Livestrong_Wire_1.png" alt="The wireframes of in article exercise modules." />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        The cumulative workout module seen below lives beneath the article's intro paragraph and houses rolled up data from all individual exercise modules on the page.
       </p>
-      <h2>Deployment</h2>
+      <img src="/images/Jose_Caldera_Livestrong_Wire_2.png" alt="The wireframes of in article exercise modules." />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        We chose to explore and envision future phases of the project in which we'd attempt to differentiate our workout content from our standard editorial template.
       </p>
-      <h2>Post-Launch</h2>
+      <img src="/images/Jose_Caldera_Livestrong_Wire_3.png" alt="The wireframes of in article exercise modules." />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        The wires above and several others were taking into the first round of testing.
       </p>
+      <h2>Testing + Iteration</h2>
+
+      <h2>... + Testing + Iteration</h2>
+
+      <h2>Phase 1 Deployment</h2>
+
       <h2>Conclusion</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      </p>
+
     </div>
   </div>
 
